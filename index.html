@@ -6,22 +6,31 @@
 </head>
 <body>
 	<img src="img/Logo_de_Pokémon_(EN).png" alt="Logo Pokemón" height="10%" width="50%">
-	<div class="caja">
-		<select class="caja">
+	<div class="contenedor">
+		
+		<select id="pokemon-uno">
 			<option value="0">Selecciona tu Pokemón</option>
-			<option value="1">Pikachu</option>
-			<option value="2">Charmander</option>
-			<option value="3">Squartle</option>
-			<option value="4">Butterfree</option>
-			<option value="5">Weedle</option>
+			<option value="Pikachu"></option>
+			<option value="Charmander">Charmander</option>
+			<option value="Squartle">Squartle</option>
+			<option value="Butterfree">Butterfree</option>
+			<option value="Weedle">Weedle</option>
 		</select>	
-	</div>
 
-	<div class="datos">
-		<p>Ingrese nivel de amistad</p>
-		<input type="datos" placeholder="Sólo números">
-		<button id="datos" onclick="aumentarAmistad()">Aumentar amistad</button>
+		<select id="pokemon-dos">
+			<option value="0">Selecciona tu Pokemón</option>
+			<option value="Pikachu">Pikachu</option>
+			<option value="Charmander">Charmander</option>
+			<option value="Squartle">Squartle</option>
+			<option value="Butterfree">Butterfree</option>
+			<option value="Weedle">Weedle</option>
+		</select>
+
+		<button id="boton" onclick="pelear()">pelear</button>
+
 	</div>
+	
+	<div id="arena"></div>
 
 
 
