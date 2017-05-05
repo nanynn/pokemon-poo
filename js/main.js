@@ -24,8 +24,13 @@ function pelear(){
 	var pokeUno = document.getElementById('pokemon-uno').value;
 	var pokeDos = document.getElementById('pokemon-dos').value;
 
-	var ataque = parseInt(prompt("ingrese poder de ataque peleador"));
-	var ataqueDos = parseInt(prompt("ingrese poder de ataque retador"));
+	if(pokeUno == pokeDos){
+		alert("No puede peliar el mismo pokemón");
+		return;
+	}
+
+	var ataque = prompt("Ingrese poder de ataque de pokémon peleador");
+	var ataqueDos = prompt("ingrese poder de ataque de pokémon retador");
 	
 
 	var peleador = new Pokemon(pokeUno, 'color', ataque);
@@ -33,11 +38,8 @@ function pelear(){
 	
 
 	var pelea = document.getElementById('arena');
-	pelea.innerHTML = peleador.nombre +' ataco a ' + retador.nombre + ' y '+ retador.nombre +' tiene una vida ' + retador.atacar(peleador);
-
-	f(pokeUno == pokeDos){
-		alert("no puede ser el mismo pokemón");
-	}
+	pelea.innerHTML = '<br>'+ peleador.nombre +' ataco a ' + retador.nombre + ' y '+ retador.nombre +' tiene una vida de ' + retador.atacar(peleador);
+	
 }
 
 

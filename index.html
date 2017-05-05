@@ -5,18 +5,37 @@
 	<title>Pokemón</title>
 </head>
 <body>
+	<style type="text/css">
+		body{
+			color: blue;
+			font-family: sans-serif;
+			background-color: #F2F5A9;
+			text-align: center;
+		}
+		button{
+			border-radius: 5px;
+			background-color: #5882FA;
+			color: #fff;
+		}
+		div{
+			text-align: center;
+			position: float;
+		}
+		
+	</style>
 	<img src="img/Logo_de_Pokémon_(EN).png" alt="Logo Pokemón" height="10%" width="50%">
 	<div class="contenedor">
-		
+		<p>Pokémon Peleador:</p>
 		<select id="pokemon-uno">
 			<option value="0">Selecciona tu Pokemón</option>
-			<option value="Pikachu"></option>
+			<option value="Pikachu">Pikachu</option>
 			<option value="Charmander">Charmander</option>
 			<option value="Squartle">Squartle</option>
 			<option value="Butterfree">Butterfree</option>
 			<option value="Weedle">Weedle</option>
 		</select>	
 
+		<p>Pokémon Retador:</p>
 		<select id="pokemon-dos">
 			<option value="0">Selecciona tu Pokemón</option>
 			<option value="Pikachu">Pikachu</option>
@@ -27,14 +46,11 @@
 		</select>
 
 		<button id="boton" onclick="pelear()">pelear</button>
-
 	</div>
 	
 	<div id="arena"></div>
 
-
-
-
+	<img src="img/pokemon2.png" alt="imagen de pokemones" height="30%" width="50%">
 
 	<script type="text/javascript" src="js/main.js" ></script>
 </body>
